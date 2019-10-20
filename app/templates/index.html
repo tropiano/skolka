@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block body %}          
+<div class="container-fluid">  
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12"> 
+     <div id='banner'>
+      <h1>сколько у нас?</h1>
+      <h1>у нас <br> <div id="amount">{{ "{:,.0f} ₽".format(entries).replace(",", ".") }}<div></h1>
+     </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
